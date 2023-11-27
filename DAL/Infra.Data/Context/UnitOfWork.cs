@@ -1,6 +1,7 @@
 ﻿using ControleEstacionamento.Infra.Data.Context;
+using DAL.Interfaces.Repositories;
 
-namespace ControleEstacionamento.Infra.Data
+namespace DAL.Infra.Data.Context
 {
     public class UnitOfWork : IUnitOfWork
     {

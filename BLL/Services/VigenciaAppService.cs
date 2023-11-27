@@ -1,7 +1,7 @@
 ﻿using BLL.Interfaces;
 using ControleEstacionamento.Domain.Entidades;
 using ControleEstacionamento.Domain.Interfaces.Repositories;
-using ControleEstacionamento.Infra.Data;
+using DAL.Interfaces.Repositories;
 using Entities;
 using Shared;
 

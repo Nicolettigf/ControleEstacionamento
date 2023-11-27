@@ -1,4 +1,4 @@
-﻿namespace ControleEstacionamento.Infra.Data
+﻿namespace DAL.Interfaces.Repositories
 {
     public interface IUnitOfWork
     {

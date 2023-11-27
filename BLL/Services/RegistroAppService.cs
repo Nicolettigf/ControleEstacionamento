@@ -3,8 +3,8 @@ using BLL.Interfaces;
 using ControleEstacionamento.Application.DTOs;
 using ControleEstacionamento.Domain.Entidades;
 using ControleEstacionamento.Domain.Interfaces.Repositories;
-using ControleEstacionamento.Infra.Data;
 using ControleEstacionamento.Infra.Data.Repositories;
+using DAL.Interfaces.Repositories;
 using Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Memory;
@@ -47,7 +47,7 @@ namespace ControleEstacionamento.Application.Services
 
             var cacheEntryOptions = new MemoryCacheEntryOptions
             {
-                AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(5),
+                AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(3),
             };
             _memoryCache.Set(cacheKey, registro, cacheEntryOptions);
 
@@ -69,7 +69,7 @@ namespace ControleEstacionamento.Application.Services
 
             var cacheEntryOptions = new MemoryCacheEntryOptions
             {
-                AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(5),
+                AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(3),
             };
             _memoryCache.Set(cacheKey, registro, cacheEntryOptions);
 
